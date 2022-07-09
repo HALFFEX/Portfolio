@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #121216;
+}
+
+/* Scroll Bar */
+
+::-webkit-scrollbar-track {
+    background-color: #232C3B;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    background: #F4F4F4;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1202f1;
+    border-radius: 15px;
+}
+
+.menu {
+    height: 12vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 25px;
+    color: #fff;
+}
+
+.logo-color {
+    color: #120ED6;
+    font-size: 20pt;
+}
+
+.author-name {
+    font-weight: normal;
+    font-size: 17pt;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul > li {
+    font-size: 13pt;
+    margin: 10px;
+}
+
+nav ul li > a {
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+nav a:hover { 
+    color: #cececf;
+}
+
+.title {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.left-info {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 5vw;
+    flex-direction: column;
+}
+
+.right-info-image {
+    
+    margin-bottom: 30px;
+}
+
+.right-info {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-info > h1 {
+    background-image: linear-gradient(to left, #281aaa, #9307f1, #7109e7 , #1100ff );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25pt;
+    
+}
+
+p{
+    color: #fff;
+}
+
+.section-info { 
+    color: #5F5F64;
+    font-weight: normal;
+    margin-top: 10px;
+    font-size: 15pt;
+}
+
+h2 {
+    margin: 5rem 0 3rem 0;
+    color: #00ffff;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.content-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+}
+
+.left-profile-img {
+    margin: 0 3rem 0 5rem;
+}
+
+.left-profile-img img {
+    border-left: 10px solid #1100ff;
+    border-radius: 5px;
+}
+
+.author-description {
+    margin-left: 2rem;
+}
+
+.content-skills {
+    /*
+    Por algum motivo, após inserir esses seletores, a margim n funciona
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+    
+    */ 
+    display: flex;
+    justify-items: center;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    
+}
+
+
+.container-skill-img {
+    
+    margin: 1rem;
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #1b1e24;
+    
+}
+
+.container-skill-img img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 1.5rem;
+}
+
+
+h3 {
+    color: #cececf;
+    margin-bottom: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
