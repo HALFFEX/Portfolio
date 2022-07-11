@@ -60,13 +60,13 @@ nav ul > li {
     margin: 10px;
 }
 
-nav ul li > a {
+a {
     text-decoration: none;
     color: #fff;
     
 }
 
-nav a:hover { 
+a:hover { 
     color: #cececf;
 }
 
@@ -121,7 +121,7 @@ p{
 }
 
 h2 {
-    margin: 5rem 0 3rem 0;
+    margin: 7rem 0 3rem 0;
     color: #00ffff;
     text-align: center;
     font-size: 2rem;
@@ -140,7 +140,7 @@ h2 {
 }
 
 .left-profile-img img {
-    border-left: 10px solid #1100ff;
+    border-left: 7px solid #1100ff;
     border-radius: 5px;
 }
 
@@ -149,38 +149,28 @@ h2 {
 }
 
 .content-skills {
-    /*
-    Por algum motivo, após inserir esses seletores, a margim n funciona
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 200px;
-    
-    */ 
-    display: flex;
-    justify-items: center;
-    flex-direction: row;
-    align-items: center;
-    width: 90%;
-    margin: auto;
-    text-align: center;
-    
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 0.7fr 0.7fr;
+    gap: 5px 5px; 
+    text-align: center; 
 }
 
 
 .container-skill-img {
-    border-left: 5px solid #1100ff;
-    box-shadow: 3px 4px 5px #000000;
-    margin: 1rem;
-    width: 270px;
-    height: 270px;
-    padding: 20px;
+    border-left: 5px solid #1100ff;  
+    box-shadow: 4px 5px 10px #000000;
+    margin: 0.5rem  auto;
+    width: 250px;
+    height: 250px;
+    padding: 15px;
     border-radius: 5px;
     background-color: #1b1e24;
     
 }
 
 .container-skill-img img {
+    
     width: 100px;
     height: 100px;
     margin-bottom: 1.5rem;
@@ -191,3 +181,51 @@ h3 {
     color: #cececf;
     margin-bottom: 0.5rem;
 }
+
+
+.projects-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.about-project {
+    background-color: #1b1e24;
+    margin: 15px;
+    padding-bottom: 2rem;
+    border-radius: 5px;
+    border-left: 5px solid #1100ff;
+    box-shadow: 4px 5px 10px #000000;
+}
+
+
+.about-project button {
+    padding: 10px;
+    width: 250px;
+    background-color: #1b1e24;
+    color: #fff;
+    box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+    border: solid 3px transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(to left, #281aaa, #9307f1, #7109e7 , #1100ff);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px #1b1e24 inset;
+    
+}
+
+button:hover {
+    box-shadow: none;
+    color: #fff;
+  }
+
+
+
+
+
+
+
+
+
+
