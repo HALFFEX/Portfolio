@@ -140,7 +140,6 @@ h2 {
 }
 
 .left-profile-img img {
-    border-left: 7px solid #1100ff;
     border-radius: 5px;
 }
 
@@ -196,7 +195,7 @@ h3 {
     margin: 15px;
     padding-bottom: 2rem;
     border-radius: 5px;
-    border-left: 5px solid #1100ff;
+    
     box-shadow: 4px 5px 10px #000000;
 }
 
@@ -218,7 +217,25 @@ h3 {
 button:hover {
     box-shadow: none;
     color: #fff;
-  }
+}
+
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-linkedin, .contact-github, .contact-email {
+    background-color: #1b1e24;
+    padding: 20px;
+    margin: 1.5rem;
+    border-radius: 5px;
+    width: 200px;
+    border-left: 5px solid #1100ff;
+}
+
 
 
 
