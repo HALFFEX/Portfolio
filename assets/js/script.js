@@ -4,14 +4,6 @@ function getDistanceFromTheTop(element) {
     const id = element.getAttribute('href')
     return document.querySelector(id).offsetTop
 }
-/*
-function nativeScroll(getDistanceFromTheTop) {
-    window.scroll({
-        top: getDistanceFromTheTop, 
-        behavior: 'smooth'
-    })
-}
-*/
 
 function scrollToSection(event) {
     event.preventDefault()   
