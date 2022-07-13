@@ -27,7 +27,7 @@ body {
     border-radius: 15px;
 }
 
-.menu {
+#menu {
     height: 12vh;
     display: flex;
     justify-content: space-around;
@@ -38,6 +38,13 @@ body {
     right: 0;
     padding: 25px;
     color: #fff;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.ChangeColor{
+    background-color:#1b1e24;
+    color: #000000;
+    
 }
 
 .logo-color {
@@ -53,12 +60,15 @@ body {
 nav ul{
     display: flex;
     list-style: none;
+    
 }
+
 
 nav ul > li {
     font-size: 13pt;
     margin: 10px;
 }
+
 
 a {
     text-decoration: none;
@@ -272,6 +282,48 @@ button:hover {
         margin: auto;
     }     
 
+}
+
+@media only screen and (max-width: 680px) {
+    
+    .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 12vh;
+        flex-direction: column;
+    }
+
+    .left-info {
+        
+        order: 2;
+        
+    }
+
+    .right-info {
+        
+        order: 1;
+    }
+
+    .left-info, .right-info {
+        width: 100vw;
+        height: auto;
+        
+    }
+
+    .content-profile, .contact{
+        flex-direction: column;
+    }
+    
+
+    .right-profile {
+        text-align: justify;
+    }
+
+    .projects-section {
+        grid-template-columns: 1fr;
+         width: 100px;
+    }
 }
 
 
