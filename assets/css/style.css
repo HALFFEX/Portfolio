@@ -63,12 +63,16 @@ nav ul{
     
 }
 
+#btn-mobile {
+    display: none;
+    width: 100px;
+    align-items: center;
+}
 
 nav ul > li {
     font-size: 13pt;
     margin: 10px;
 }
-
 
 a {
     text-decoration: none;
@@ -118,9 +122,14 @@ a:hover {
     
 }
 
-p{
+p {
     color: #fff;
 }
+
+.about-cv{
+    margin-top: 1.5rem;
+}
+
 
 .section-info { 
     color: #5F5F64;
@@ -227,9 +236,6 @@ button {
     cursor: pointer;
 }
 
-.about-cv{
-    margin-top: 1.5rem;
-}
 
 button:hover {
     box-shadow: none;
@@ -285,7 +291,75 @@ button:hover {
 }
 
 @media only screen and (max-width: 680px) {
+   
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background-color: none;
+        gap: .5rem;
+        
+    }
     
+    .burguer {
+        display: block;
+        width: 20px;
+        border-top: 2px solid;
+    }
+
+    .burguer::after, .burguer::before {
+        content: '';
+        display: block;
+        margin-top: 5px;
+        width: 20px;
+        height: 2px;
+        transition: .3s;
+        position: relative;
+        background-color: currentColor;
+    }
+
+    #nav.active .burguer {
+        border-top-color: transparent;
+    }
+
+    #nav.active .burguer::before  {
+        transform: rotate(135deg);
+
+    }
+    #nav.active .burguer::after  {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+    
+    #nav > ul {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 0px;
+        visibility: hidden;
+        transition: .6s;
+        top: 70px;
+        right: 0;
+        z-index: 1000;
+        background-color: #1b1e24;
+        overflow-y: hidden;
+        text-align: center;
+        
+    }
+
+    #nav.active #nav {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #nav  a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        
+    }
+
     .title {
         display: flex;
         justify-content: center;
@@ -315,16 +389,43 @@ button:hover {
         flex-direction: column;
     }
     
-
+   
     .right-profile {
-        text-align: justify;
+        align-items: flex-start;
+        margin-top: 1rem;
     }
 
+    .right-profile p{
+        
+        margin: auto;
+        
+    }
+
+   .left-profile-img {
+    margin: auto;
+   }
     .projects-section {
+        
         grid-template-columns: 1fr;
-         width: 100px;
+        width: 100px;
+    }
+
+    footer {
+        width: 90%;
+        margin: auto;
     }
 }
 
 
-
+@media only screen and (max-width: 530px) {
+    body, html {
+        width: 100vw;
+    }
+    .left-info {
+        width: 90%;
+    }
+    .content-skills {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
