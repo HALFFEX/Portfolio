@@ -7,8 +7,9 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {
+body, html {
     background-color: #121216;
+    scroll-behavior: smooth;
 }
 
 /* Scroll Bar */
