@@ -1,4 +1,4 @@
-const menuLinks = document.querySelectorAll('.menu-select a[href^="#"] ')
+const menuLinks = document.getElementById('#menu a[href^="#"] ')
 
 function getDistanceFromTheTop(element) {
     const id = element.getAttribute('href')
