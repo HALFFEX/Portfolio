@@ -85,8 +85,8 @@ a:hover {
     color: #cececf;
 }
 
-.title {
-
+.title, .contact {
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -241,13 +241,6 @@ button {
 button:hover {
     box-shadow: none;
     color: #fff;
-}
-
-.contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }
 
 .contact-linkedin, .contact-github, .contact-email {
