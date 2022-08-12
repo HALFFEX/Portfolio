@@ -98,6 +98,7 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    text-align: start;
     margin-left: 5vw;
     flex-direction: column;
 }
@@ -179,9 +180,8 @@ h2 {
 .container-skill-img {
     /* border-left: 5px solid #1100ff;  
     box-shadow: 4px 5px 10px #000000; */
-    margin: 10px;
-    width: 150px;
-    height: 150px;
+    margin: 10px auto;
+    
     padding: 15px;
     
     /* border-radius: 5px;
@@ -189,7 +189,8 @@ h2 {
     
 }
 
-.container-skill-img img {   
+.container-skill-img img { 
+    width: 100%;  
     max-width: 90px;
     margin-bottom: 1.5rem;
 }
