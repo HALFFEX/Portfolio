@@ -132,8 +132,6 @@ p {
     margin-top: 1.5rem;
 }
 
-
-
 .section-info { 
     color: #5F5F64;
     font-weight: normal;
@@ -229,7 +227,6 @@ button {
     cursor: pointer;
 }
 
-
 button:hover {
     box-shadow: none;
     color: #fff;
@@ -303,8 +300,6 @@ button:hover {
         gap: .5rem;
         
     }
-
-    
     
     .burguer {
         display: block;
@@ -351,6 +346,7 @@ button:hover {
         text-align: center;
         
     }
+
     #nav ul > li {
         width: 100%;
         height: 20vh;
@@ -360,7 +356,6 @@ button:hover {
         margin: auto;
         border-bottom: 2px solid #414449;
     }
-
         
     #nav.active #nav {
         height: calc(100vh - 70px);
@@ -403,7 +398,6 @@ button:hover {
         flex-direction: column;
     }
     
-   
     .right-profile {
         align-items: flex-start;
         margin-top: 1rem;
@@ -427,10 +421,6 @@ button:hover {
     footer {
         width: 90%;
         margin: auto;
-    }
-
-    .container-skill-img{
-        width: 70%;
     }
 }
 
